@@ -10,6 +10,13 @@ I am not responsible, nor do I take responsibility for the consequences of the u
 ## How does it work?
 The bot uses [selenium](https://www.selenium.dev/) to control the browser. For the chess part the bot uses the open-source engine [Stockfish](https://github.com/official-stockfish/Stockfish).
 
+## Prerequisites
+To use the bot properly you need the following software:
+- Python 3.6 or higher
+- Stockfish 
+- Gecko Driver
+You can see the configuration with which I developed the bot in the **Additional information** section.
+
 ## How to install
 Just open a terminal and do:
 ```
@@ -34,3 +41,11 @@ Launch the bot,
 python3 ChessBot.py
 ```
 **and let the magic happen**.
+
+### Additional information
+Develop and test with:
+```
+Python 3.9.9
+Stockfish 14.1 - Linux x64
+Gecko Driver (0.30.0)
+```
