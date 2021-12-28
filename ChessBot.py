@@ -1,6 +1,4 @@
-import sys
-
-import selenium ; sys.dont_write_bytecode = True
+import sys ; sys.dont_write_bytecode = True
 
 from environs import Env
 
