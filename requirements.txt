@@ -1,8 +1,7 @@
 async-generator==1.10
-attrs==21.2.0
+attrs==21.3.0
 certifi==2021.10.8
 cffi==1.15.0
-chess==1.8.0
 cryptography==36.0.1
 environs==9.3.5
 h11==0.12.0
