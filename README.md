@@ -24,7 +24,7 @@ git clone https://github.com/vincent-coding/ChessBot
 ```
 Enter in the folder then created then edit the file .env (it is the file which contains the configuration of the bot)
 ```
-USERNAME  = <Your chess.com username (NOT YOUR EMAIL)>
+LOGIN     = <Your chess.com username or email>
 PASSWORD  = <Your chess.com password>
 STOCKFISH = <The path to the stockfish binary file>
 RUN_COUNT = <The number of games the bot will play before stopping>
