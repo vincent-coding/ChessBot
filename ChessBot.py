@@ -285,7 +285,7 @@ if __name__ == '__main__':
 
         while True:
             end_game, results = bot.isGameEnded(opponent_name, game)
-            print(end_game, results)
+            #print(end_game, results)
             if end_game:
                 if results == "win":
                     wins += 1
