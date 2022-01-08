@@ -61,12 +61,16 @@ class ChessBot:
         self.__drivers.get('https://www.chess.com/login')
         while True:
             try:
-                bottom_banner = EC.presence_of_element_located((By.CLASS_NAME, 'bottom-banner-close'))
-                WebDriverWait(self.__drivers, 1).until(bottom_banner)
+                login_button = EC.presence_of_element_located((By.ID, 'login'))
+                WebDriverWait(self.__drivers, 1).until(login_button)
                 break
             except: pass
 
-        self.__drivers.find_element(By.CLASS_NAME, 'bottom-banner-close').click()
+        try:
+            bottom_banner = EC.presence_of_element_located((By.CLASS_NAME, 'bottom-banner-close'))
+            WebDriverWait(self.__drivers, 3).until(bottom_banner)
+            self.__drivers.find_element(By.CLASS_NAME, 'bottom-banner-close').click()
+        except: pass
 
         self.__drivers.find_element(By.ID, 'username').send_keys(self.__login)
         self.__drivers.find_element(By.ID, 'password').send_keys(self.__password)
@@ -285,7 +289,6 @@ if __name__ == '__main__':
 
         while True:
             end_game, results = bot.isGameEnded(opponent_name, game)
-            #print(end_game, results)
             if end_game:
                 if results == "win":
                     wins += 1
