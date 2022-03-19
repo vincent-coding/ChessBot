@@ -15,6 +15,7 @@ To use the bot properly you need the following software:
 - Python 3.6 or higher
 - Stockfish 
 - Gecko Driver
+
 You can see the configuration with which I developed the bot in the **[Additional information](https://github.com/vincent-coding/ChessBot#additional-information)** section.
 
 ## How to install
